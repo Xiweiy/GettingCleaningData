@@ -22,8 +22,7 @@
 
 
 #####2. My work to clean up the dataset and create the 2nd independent tidy dataset is as follows:
-	1) Read in the datasets contained in documents "X_test.txt","y_test.txt","subject_test.txt",  
-"X_train.txt","y_train.txt","subject_train.txt"
+	1) Read in the datasets contained in documents "X_test.txt","y_test.txt","subject_test.txt", "X_train.txt", "y_train.txt","subject_train.txt"
 	2) create 2 datasets: train and test. Each contain the subject, activity, and the 561-dimensional  
 vectors for either the training dataset or the test dataset.
 	3) merge these 2 datasets by subject and activity.
@@ -36,8 +35,7 @@ new dataset based on that. This step can be approached by two different strategi
 (b) use the "melt" and "dcast" functions in the reshape2 package. Both leads to the same tidy dataset at the end.
 		
 #####3. Why chose these specific variables?
-	As according to their README.TXT document, “Using its embedded accelerometer and gyroscope,  
-we captured 3-axial linear acceleration and 3-axial angular velocity”. 
+	As according to their README.TXT document, “Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity”. 
 	And according to the features_info.txt document, we can learn that the raw signals were   
 filtered and noise was removed. Then the acceleration signal was separated into tBodyAcc-XYZ and   
 tGravityAcc-XYZ. And, inferred by the naming rule, the tBodyGyro-XYZ variables should be the direct   
